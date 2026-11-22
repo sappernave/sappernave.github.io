@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: linen;
+  color: darkslategray;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+}
+
+header {
+  width: 300px;
+  background-color: darkslategray;
+  color: linen;
+  padding: 40px 28px;
+  border-right: 6px solid coral;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+header p {
+  color: antiquewhite;
+  font-size: 16px;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-top: 2px solid coral;
+  padding-top: 22px;
+}
+
+.top-nav a {
+  color: linen;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.top-nav a:hover {
+  color: coral;
+}
+
+main {
+  flex-grow: 1;
+  padding: 45px 50px;
+  max-width: 1050px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 45px 0 22px;
+  padding-left: 14px;
+  border-left: 5px solid coral;
+  color: darkslategray;
+}
+
+.top {
+  margin-top: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid darkslategray;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  box-shadow: 6px 6px 0px coral;
+}
+
+.card:hover {
+  box-shadow: 8px 8px 0px darkslategray;
+}
+
+.card img {
+  width: 220px;
+  height: auto;
+  min-height: 160px;
+  object-fit: cover;
+  border-left: 2px solid darkslategray;
+  flex-shrink: 0;
+}
+
+.content {
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content h3 {
+  margin-bottom: 14px;
+  font-size: 22px;
+  color: darkslategray;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background-color: coral;
+  color: white;
+  text-decoration: none;
+  padding: 9px 22px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid darkslategray;
+}
+
+.button:hover {
+  background-color: darkslategray;
+  color: linen;
+}
+
+footer {
+  text-align: left;
+  padding: 24px 0;
+  margin-top: 60px;
+  border-top: 2px solid darkslategray;
+  color: dimgray;
+  font-size: 14px;
+}

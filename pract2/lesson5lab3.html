@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 5 Lab 4</title>      
+</head>
+<body>
+    <h1>Practice Lab 4</h1>
+    <input type="button" value="Compare Rent" onclick="rentComparison();">
+    <p id="result"></p>
+
+    <script>
+        function rentComparison() {
+            let collegeRent = 7500;
+            let outsideRent = parseFloat(prompt("Please enter the monthly rent:"));
+            let yearlyRent = outsideRent * 12;
+            let message = "";
+
+            if (collegeRent > yearlyRent) {
+                message = "Cheaper to live outside."; 
+            } else if (collegeRent < yearlyRent) {
+                message = "Cheaper to rent at college.";
+            } else {
+                message = "Both options cost the exact same.";
+            }
+
+            document.getElementById("result").textContent = message;
+        }
+    </script>
+    <a href="../index.html">&larr; Back to Main Portfolio</a>         
+</body>
+</html>

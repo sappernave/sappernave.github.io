@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn Linux - Terminal Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .command-group {
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            background-color: #1d212a;
+            border-left: 4px solid #39ff14;
+            color: #b0b8c4;
+        }
+        code {
+            font-family: 'Times New Roman', monospace;
+            background-color: #050505;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #39ff14;
+            margin-right: 10px;
+            border: 1px solid #224422;
+            display: inline-block;
+            min-width: 180px;
+        }
+        .terminal {
+            display: block;
+            max-width: 500px; 
+            width: 100%;       
+            margin: 20px auto; 
+            border: 2px solid #39ff14;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">> History & Intro</a>
+            <a href="terminal.html" class="active">> Terminal Guide</a>
+            <a href="practice.html">> Practice</a>
+        </nav>
+    </header>
+    <main class="content-box">
+        <h1>Terminal & Command Introduction</h1>
+        <h2>Why Use the Terminal?</h2>
+        <p>Hollywood has made the terminal look like it's for elite blackhat hackers or just a display that looks like the Matrix. 
+           However, the truth is the Linux terminal is a powerful interface that allows users to interact with the operating system at 
+           a deep level. It provides a direct way to execute commands and manage files and directories without the need for a graphical 
+           user interface. The command line is an expressive way to interact with your system, just like a conversation with a person.</p>
+        <img src="matrix.png" alt="Matrix" class="terminal" height="300px">
+        <p>Beyond simple directory lookups, processing configurations relies on file control commands. You will use the copy utility to 
+           duplicate files, the move command to relocate or rename records, and the clear utility whenever you need to clean up an 
+           overly crowded text window history layout.</p>
+        <img src="terminal.png" alt="Terminal" class="terminal">
+    </main>
+    <section class="content-box">
+        <h2>Linux Basic Command Cheatsheet</h2>
+        <p>To basically interact with the Linux terminal, you need to understand the primary commands used to navigate the system, manage
+           files, configure networking, and adjust permissions.</p>
+        <div class="command-group">
+            <h3>Basic Filesystem Commands</h3>
+            <ul>
+                <li><code>cat [filename]</code> - Displays the raw contents of a file directly onto the screen.</li>
+                <li><code>cd ..</code> - Moves up exactly one directory level.</li>
+                <li><code>cd /</code> - Switches directly to the root directory.</li>
+                <li><code>cd [directory]</code> - Switches to a specified working directory.</li>
+                <li><code>clear</code> - Wipes all visible text history from the terminal screen interface.</li>
+                <li><code>cp [filename] [new_name]</code> - Duplicates a file and creates an exact copy.</li>
+                <li><code>date</code> - Displays the current system date and time.</li>
+                <li><code>free -m</code> - Displays the system's available and consumed memory usage in megabytes.</li>
+                <li><code>head [filename]</code> - Displays the first 10 lines of a specified file.</li>
+                <li><code>history</code> - Prints out a chronological list of previously executed commands.</li>
+                <li><code>hostnamectl</code> - Lists detailed system configuration information.</li>
+                <li><code>ifconfig</code> - Displays active network interface configuration details.</li>
+                <li><code>kill [pid]</code> - Terminates a specific active process using its unique Process ID.</li>
+                <li><code>ls</code> - Lists all files and directories in the current directory.</li>
+                <li><code>ls -l</code> - Lists all files with info like ownership, size, and modification date.</li>
+                <li><code>man [command]</code> - Pulls up the comprehensive manual and help information for a command.</li>
+                <li><code>mkdir [directory]</code> - Creates a brand new directory folder.</li>
+                <li><code>mv [file] [new_path]</code> - Moves a file to a new location.</li>
+                <li><code>mv [old_name] [new_name]</code> - Renames a file while keeping it in the same location.</li>
+                <li><code>pwd</code> - Prints the full absolute path of your current working directory.</li>
+                <li><code>reboot</code> - Restarts the operating system immediately.</li>
+                <li><code>rm [filename]</code> - Permanently deletes a file.</li>
+                <li><code>rm -rf [directory]</code> - Recursively removes a directory and all of its contents.</li>
+                <li><code>shutdown -h now</code> - Shuts down the computer system safely.</li>
+                <li><code>sudo [command]</code> - Runs commands with elevated root/administrator privileges.</li>
+                <li><code>tail [filename]</code> - Displays the last 10 lines of a specified file.</li>
+                <li><code>top</code> - Lists all running processes actively utilizing system resources.</li>
+                <li><code>touch [filename]</code> - Creates a brand new, empty file.</li>
+                <li><code>vi [filename]</code> - Opens a file for writing and editing inside the Vi text editor.</li>
+            </ul>
+        </div>
+        <div class="command-group">
+            <h3>Networking Commands</h3>
+            <ul>
+                <li><code>dig -x [host]</code> - Performs a reverse DNS lookup for an IP address.</li>
+                <li><code>dig [domain]</code> - Displays the detailed DNS records for a domain name.</li>
+                <li><code>host [domain]</code> - Displays the basic IP address of a target domain name.</li>
+                <li><code>ping [ip]</code> - Checks network connectivity to a specific IP address or host.</li>
+                <li><code>ssh [user]@[host]</code> - Securely logs into a remote system or server over the network.</li>
+                <li><code>wget [file_url]</code> - Downloads a file directly from the internet via a URL path.</li>
+                <li><code>whois [domain]</code> - Fetches comprehensive public registration information for a domain.</li>
+            </ul>
+        </div>
+        <div class="command-group">
+            <h3>Permission Configuration Commands</h3>
+            <ul>
+                <li><code>chmod -R xxx [directory]</code> - Recursively assigns file permissions to a folder and all its sub-folders.</li>
+                <li><code>chmod [xxx] [filename]</code> - Assigns read, write, and execute permissions to a file using absolute numeric codes.</li>
+                <li><code>chown [user] [filename]</code> - Changes the owner architecture of a file to a new user account.</li>
+            </ul>
+        </div>
+        <div class="command-group">
+            <h3>Storage Related Commands</h3>
+            <ul>
+                <li><code>df -h</code> - Lists storage capacity and free disk space information for all connected partitions.</li>
+                <li><code>du -h /home/directory</code> - Displays file directory size in a human-readable format.</li>
+                <li><code>fdisk -l</code> - Displays overall disk sizes along with distinct partition layout configurations.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p style="text-align: center;">&copy; Copyright 2026 IST 250: Introduction to Web Design and Development.</p>
+    </footer>
+</body>
+</html>

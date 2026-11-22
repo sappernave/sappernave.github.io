@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Partner Project 2</title>
+        <link rel="stylesheet" href="project2.css">
+        <script src="project2.js"></script>
+    </head>
+
+    <body>
+      <header class="header-strip">
+        <a href="../index.html">&larr; Back to Main Portfolio</a>
+        <h1 id="user">Hello USER! Welcome To Your Page</h1>
+        <p id="greetingbox">Enter a greeting for your page!</p>
+      </header>
+
+      <main class="main-content">
+        <h3 id="list" style="display:none;">To Do List</h3>
+        <div class="todo-box">
+          <ol id="userlist"></ol>
+        </div>
+
+        <p>
+          <label for="namebox">Name:</label>
+          <br/>
+          <input type="text" id="namebox">
+        </p>
+
+        <p>
+          <label for="greeting">Brief Message:</label>
+          <br/>
+          <input type="text" id="greeting">
+        </p>
+
+        <p>
+          <label for="background_color">Background Color:</label>
+          <br/>
+          <select id="background_color">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Pink">Pink</option>
+            <option value="Brown">Brown</option>
+          </select>
+        </p>
+
+        <p>
+          <input type="button" value="Submit Changes" onclick="updatePage();">
+        </p>
+
+        <p>
+          <label for="input">Add To Do:</label>
+          <br/>
+          <input type="text" id="input">
+          <input type="button" value="Add To Do" onclick="document.getElementById('list').style.display='block';todo();">
+        </p>
+      </main>
+    </body>
+</html>

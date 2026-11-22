@@ -1,0 +1,117 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    background-color: #0d0e11; 
+    color: #39ff14;            
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.content-box {
+    display: block;
+    outline: 2px solid #39ff14;
+    outline-offset: -10px;
+    padding: 30px;
+    background-color: #16191f; 
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+header nav {
+    display: flex;
+    gap: 25px;
+}
+header nav a {
+    text-decoration: none;
+    color: #888;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+header nav a.active {
+    color: #39ff14;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.8);
+}
+header nav a:hover {
+    color: #00d2ff;
+    text-shadow: 0 0 8px rgba(0, 210, 255, 0.8);
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px dashed #39ff14;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+p {
+    color: #b0b8c4;
+    line-height: 1.6;
+}
+.floating-card {
+    float: right;           
+    width: 200px;
+    margin: 10px 0 20px 30px;   
+    padding: 12px;
+    background-color: #0d0e11;
+    border: 2px dashed #39ff14;
+    border-radius: 4px;
+    text-align: center;
+}
+.floating-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+.floating-card span {
+    display: block;
+    font-size: 0.85em;
+    color: #ffffff;
+    margin-top: 8px;
+}
+.command-group { margin-top: 30px; }
+ul { list-style-type: none; padding: 0; }
+li {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background-color: #1d212a;
+    border-left: 4px solid #39ff14;
+    color: #b0b8c4;
+}
+code {
+    background-color: #050505;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: #39ff14;
+    margin-right: 10px;
+    border: 1px solid #224422;
+    display: inline-block;
+    min-width: 180px;
+}
+.terminal-btn {
+    display: inline-block;
+    color: #39ff14;
+    background-color: #050505; 
+    padding: 15px 20px;
+    border: dashed 2px #39ff14;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.terminal-btn:hover { background-color: #112211; }
+.terminal-input-row { display: flex; align-items: center; gap: 10px; margin-top: 15px; }
+.terminal-input-row input {
+    background: #050505;
+    border: 1px solid #39ff14;
+    color: #39ff14;
+    padding: 10px;
+    flex: 1;
+}
+footer { font-size: 0.9em; color: #555; text-align: center; }

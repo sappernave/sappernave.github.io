@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+}
+
+.header-strip {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px 24px;
+    width: 100%;
+}
+
+.header-strip h1#user {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+}
+
+.header-strip #greetingbox {
+    color: #ffffff;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.main-content {
+    padding: 20px 24px;
+}
+
+h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.todo-box {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px 12px;
+    min-height: 42px;
+    max-width: 360px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.todo-box ol#userlist {
+    padding-left: 20px;
+    margin: 0;
+    color: #000000;
+}
+
+.todo-box ol#userlist li {
+    padding: 2px 0;
+    color: #000000;
+}
+
+p {
+    margin: 10px 0;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+select {
+    color: #000000;
+    padding: 6px 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13.5px;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+input[type="button"] {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+input[type="button"]:hover {
+    opacity: 0.8;
+}
